@@ -1,0 +1,68 @@
+.header {
+    background-color: $color-footer-info;
+    padding: 24px 0;
+    min-height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-list {
+    display: flex;
+    gap: 50px;
+    padding-left: 40px;
+}
+.contacts-list {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+.navigation-list-item {
+    color: var(--color-footer-info);
+}
+.contact-list-link {
+    color: inherit;
+}
+.contacts-list-link-svg {
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+}
+.contacts-list-item:hover {
+    color: var(--color-blue);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-list-item,
+.contacts-list-item {
+    @include fontstyles(Roboto,14px,500,16px,0.02em,left,$color-p);
+}
+.header-logo {
+    @include fontstyles(Raleway,26px,700,31px,0.03em,left,$color-black);
+}
+.contacts-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $color-p;
+}
+.navigation-list-item-link {
+    @include fontstyles(Raleway,14px,500,16px,0.03em,left,$color-black);
+}
+.navigation-list-item-link-current{
+    position: relative;
+}
+.navigation-list-item-link-current::before{
+	content: "";
+	position: absolute;
+	left: 0; 
+    bottom: 0;
+	width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: -33px;
+	background-color: var(--color-blue);
+}
