@@ -1,0 +1,45 @@
+.features-list {
+    display: flex;
+    gap: 30px;
+
+    &-item {
+        width: 270px;
+        height: 224px;
+        top: 774px;
+        left: 515px;
+        border-radius: 4px;
+
+    }
+
+    &-title {
+        @include fontstyles(Roboto, 14px, 700, 16px, 0.03em, left, $color-black);
+        padding-top: 30px;
+    }
+
+    &-description {
+
+        padding-top: 10px;
+        @include fontstyles(Roboto, 14px, 400, 23px, 0.03em, left, $color-p);
+    }
+}
+
+
+.features-list-image-first::before {
+    background-image: url("../img/firstbg.jpg");
+    @extend %before-image;
+}
+
+.features-list-image-second::before {
+    background-image: url("../img/secondbg.jpg");
+    @extend %before-image;
+}
+
+.features-list-image-third::before {
+    background-image: url("../img/thirdbg.jpg");
+    @extend %before-image;
+}
+
+.features-list-image-fourth::before {
+    background-image: url("../img/fourthbg.jpg");
+    @extend %before-image;
+}

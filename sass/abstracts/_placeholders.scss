@@ -1,0 +1,12 @@
+%hover-element{
+    color: $color-blue;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+%before-image{
+    content: "";
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
