@@ -1,0 +1,126 @@
+.footer {
+    background-color: $color-background;
+    padding: 60px 0;
+
+    &-logo {
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    &-wrap {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+    }
+}
+
+.footer-form-div {
+    width: 558px;
+
+}
+
+.footer-icons-title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+
+
+.footer-icons-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.footer-icons-list-item-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: #FFFFFF;
+    background-color: #42434d;
+
+    &:hover {
+        background-color: #2196F3;
+        fill: #FFFFFF;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+}
+
+
+
+.footer-icons-list-item-svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+
+    &-input {
+        border: 1px solid #FFFFFF;
+        opacity: 20%;
+        background-color: #2F303A;
+        width: 358px;
+        height: 50px;
+    }
+
+    &-title {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: $color-footer-info;
+        margin-bottom: 20px;
+        height: 16px;
+    }
+
+    &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &-button {
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: $color-blue;
+
+    }
+}
+
+.footer-form-button-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $color-section-hero;
+}
+.address-list-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $color-footer-info;
+    text-decoration: none;
+}

@@ -31,7 +31,7 @@
     }
 
     &-link-svg {
-        fill: currentColor;
+
         width: 16px;
         height: 12px;
     }
@@ -47,6 +47,7 @@
 
         &-link {
             @include fontstyles(Raleway, 14px, 500, 16px, 0.03em, left, $color-black);
+            fill: currentColor;
         }
 
         &-link-current {

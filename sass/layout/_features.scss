@@ -8,16 +8,13 @@
         top: 774px;
         left: 515px;
         border-radius: 4px;
-
     }
-
     &-title {
         @include fontstyles(Roboto, 14px, 700, 16px, 0.03em, left, $color-black);
         padding-top: 30px;
     }
 
     &-description {
-
         padding-top: 10px;
         @include fontstyles(Roboto, 14px, 400, 23px, 0.03em, left, $color-p);
     }
