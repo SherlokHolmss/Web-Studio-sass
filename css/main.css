@@ -312,9 +312,14 @@ span {
   text-align: left;
   color: #757575;
 }
+.contacts-list-link {
+  color: #757575;
+}
 .contacts-list-link-svg {
-  width: 16px;
-  height: 12px;
+  color: currentColor;
+}
+.contacts-list-link-svg-use {
+  fill: #757575;
 }
 
 .navigation-list {
@@ -341,7 +346,6 @@ span {
   letter-spacing: 0.03em;
   text-align: left;
   color: #000000;
-  fill: currentColor;
 }
 .navigation-list-item-link-current {
   position: relative;

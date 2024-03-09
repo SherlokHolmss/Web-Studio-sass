@@ -24,17 +24,20 @@
 
     &-item {
         @include fontstyles(Roboto, 14px, 500, 16px, 0.02em, left, $color-p);
-
         &:hover {
             @extend %hover-element;
         }
     }
-
-    &-link-svg {
-
-        width: 16px;
-        height: 12px;
+    &-link{
+        color: #757575;
     }
+    &-link-svg {
+        color: currentColor;
+        &-use{
+            fill: #757575;
+        }
+    }
+
 }
 
 .navigation-list {
@@ -47,7 +50,6 @@
 
         &-link {
             @include fontstyles(Raleway, 14px, 500, 16px, 0.03em, left, $color-black);
-            fill: currentColor;
         }
 
         &-link-current {
